@@ -1,0 +1,119 @@
+.ModalWarp{
+  z-index: 1000;
+  position: fixed;
+  left:0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0,0,0,0.5);
+  .AlertPop{
+    left: 50%;
+    position: fixed;
+    _position: absolute;
+    text-align: left;
+    top: 30%;
+    width: 350px;
+    margin-left: -175px;
+    background-color: white;
+    border-radius: 3px;
+    .title{
+      background-color: #f6f6f6;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 3px 3px 0 0;
+      padding: 0 15px;
+      text-align: left;
+      font-size: 18px;
+    }
+    .content{
+      padding: 15px 15px 10px 15px;
+      text-indent: 2em;
+      display: block;
+      line-height: 25px;
+    }
+    .btnWrap{
+      padding-right: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-align: right;
+    }
+    .disabled{
+      color: #ccc;
+    }
+    button{
+      margin-left: 10px;
+      position: relative;
+      display: inline-block;
+      color: #444;
+      border-radius: 2px;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      padding: 6px 20px;
+      margin: 0 5px 3px 3px;
+      line-height: 150%;
+      cursor: pointer;
+    }
+  }
+  .FormSuccessWrap{
+    position:fixed;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:200px;
+    height:100px;
+
+    background-color: white;
+    border-radius: 3px;
+    .icon{
+      height:70px;
+      width: 80px ;
+      float: left;
+      img{
+        margin: 20px 20px;
+        height: 40px;
+      }
+    }
+    .contentWarp{
+      height:70px;
+      min-height: 0px;
+      width: 120px ;
+      float: left;
+      .content{
+        height: 20px;
+        margin: 30px 0;
+      }
+    }
+    .contentCenter {
+      height: 100px;
+      min-height: 0px;
+      width: 200px;
+      float: left;
+      text-align: center;
+      .content {
+        height: 20px;
+        margin: 40px 0;
+      }
+    }
+    .btnWrap{
+      float: left;
+      height: 30px;
+      width: 200px;
+      text-align: center;
+      .FormSuccessWrap_btn{
+        cursor: pointer;
+        border-top: 1px solid #ccc;
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        width: 200px;
+        font-size: 18px;
+      }
+      .disabled{
+        color: #ccc;
+      }
+    }
+  }
+}

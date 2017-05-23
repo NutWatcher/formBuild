@@ -1,0 +1,41 @@
+@import "./base";
+.ComPropertyFileUploadBox{
+  .baseCom();
+  .boldLabel();
+  &>input{
+    display: block;
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px
+  }
+  .uploadFileItem{
+    position: relative;
+    float: left;
+    width: 60px;
+    span{
+      width: 100%;
+    }
+    .deleteIcon {
+      left: 90%;
+      cursor: pointer;
+      display: block;
+      float: right;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #eee;
+
+    }
+    .info{
+      padding: 0;
+      width: 100%;
+      word-break: break-all;
+    }
+  }
+}

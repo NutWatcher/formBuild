@@ -1,0 +1,42 @@
+.baseCom(){
+  flex:1;
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 100%;
+  .hide{
+    display: none;
+  }
+  .validated{
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap:break-word;
+    margin: 3px 0 6px 20px;
+    display: inline-block;
+    color: red;
+  }
+  .description{
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    word-wrap:break-word;
+  }
+}
+.boldLabel(){
+
+  &>p {
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap:break-word;
+    margin: 3px 0 6px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+    .hide {
+    }
+  }
+  .red{
+    display: inline-block;
+    color: red;
+    padding-top: 3px;
+  }
+}

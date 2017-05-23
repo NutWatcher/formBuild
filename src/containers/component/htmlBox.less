@@ -1,0 +1,18 @@
+@import "./base";
+.ComHtmlBox{
+  .baseCom();
+  .boldLabel();
+  .separator{
+    width: 100%;
+    border-top: 1px dotted #ccc;
+  }
+  &>div{
+    table{
+      td{
+        border: 1px solid #999;
+        padding: 3px 5px;
+        min-width: 50px;
+      }
+    }
+  }
+}

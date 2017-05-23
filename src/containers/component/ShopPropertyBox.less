@@ -1,0 +1,161 @@
+@import "./base";
+.ComShopPropertyItemBox{
+  .baseCom();
+  .boldLabel();
+  cursor: pointer;
+  &>.normal{
+    width: 100%;
+    height: 37px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-top: 0px solid #ddd;
+    padding: 5px 10px;
+    div{
+      display: inline-block;
+    }
+    .btnS{
+      height: 25px;
+      line-height: 25px;
+      float: right;
+    }
+    .label{
+      p{
+        line-height: 25px;
+      }
+    }
+  }
+  &>.select{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-top: 0px solid #ddd;
+    padding: 5px 0px;
+    input{
+      display: inline-block;
+      padding: 7px;
+      border: 1px solid #ddd;
+    }
+    &>.topWrap{
+      display: flex;
+      padding: 0px 10px;
+      .btnS{
+        line-height: 25px;
+        //width: 50px;
+      }
+      .image{
+        margin-right: 5px;
+        img{
+          vertical-align: middle;
+          border-radius: 2px;
+          width: 30px;
+          height: 30px;
+        }
+        a{
+          margin-left: 10px;
+        }
+      }
+      .topWrapLabel{
+        font-weight: bold;
+        flex-grow:1;
+        input{
+          position: relative;
+          width: 45%;
+        }
+      }
+      .label{
+        flex-grow:1;
+        input{
+          position: relative;
+          width: 45%;
+        }
+      }
+    }
+    &>.wrap{
+      width: 100%;
+      box-sizing: border-box;
+      div{
+        display: inline-block;
+        height: 37px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        line-height: 25px;
+      }
+      .vt{
+        vertical-align: top;
+      }
+      .md{
+        width: 100%;
+
+      }
+      textarea{
+        border: 1px solid #ddd;
+        width: 187px;
+        height: 50px;
+        max-width: 220px;
+        min-height: 50px;
+      }
+      .sm{
+        padding-right: 5px;
+        width: 50%;
+        input{
+          width: 45%;
+        }
+        select{
+          width: 60%;
+          display: inline-block;
+          padding: 6px 2px;
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  &>.top{
+    border-top: 1px solid #ddd;
+  }
+  .iconfont{
+    margin: 5px 0 0 3px;
+    font-family: 'MyWebFont'!important;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .1px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.ComShopPropertyBox{
+  .baseCom();
+  .boldLabel();
+  &>.imageCheck{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  &>select{
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px;
+  }
+  .mr3{
+    margin-right: 3px;
+  }
+  .ml3{
+    margin-left: 3px;
+  }
+}
+.ComWidthM{
+  width: 50%;
+}
+.ComWidths{
+  width: 30%;
+}
+.ComWidthXXL{
+  width: 100%;
+}

@@ -1,0 +1,78 @@
+@import "./base";
+.ComTelephoneBox{
+  .baseCom();
+  .boldLabel();
+  &>input{
+    display: block;
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px
+  }
+
+  &>.telItemWrap{
+    width: 100%;
+    &>.nameSep{
+      display: inline-block;
+      padding: 0;
+      margin-left: 3px;
+      margin-right: 3px;
+      vertical-align: top;
+      line-height: 33px;
+      color: #999;
+      font-size: 90%;
+    }
+    &>.nameWarp{
+      display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      &>p{
+        color: #999;
+        font-size: 90%;
+      }
+      &>input{
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        color: #333;
+        font-size: 100%;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: normal;
+        padding: 7px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        font-size: 13.3333px
+      }
+    }
+  }
+  .telL{
+    width: 100%;
+  }
+  .telM{
+    width: 50%;
+  }
+  .ComWidthM{
+    width: 40%;
+  }
+  .ComWidthSS{
+    width: 20%;
+  }
+  .ComWidthS{
+    width: 30%;
+  }
+  .ComWidthXXL{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+
+}

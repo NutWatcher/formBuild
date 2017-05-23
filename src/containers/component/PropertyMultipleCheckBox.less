@@ -1,0 +1,101 @@
+@import "./base";
+.PropertyMultipleCheckBox{
+  .baseCom();
+  .boldLabel();
+
+  &>input{
+    display: block;
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px
+  }
+  .ComCheckBox{
+    width: 95%;
+    position: relative;
+    margin-top: 5px;
+    &>.showTimes{
+      width: 100%;
+      position: relative;
+      display: flex;
+      span{
+        flex-grow: 1;
+        line-height: 33px;
+        text-align: center;
+      }
+      input{
+        width: 25%;
+      }
+      select{
+        width: 25%;
+      }
+    }
+    &>.ComCheckBoxMain{
+      width: 100%;
+      position: relative;
+      display: flex;
+      .radio, .checkbox{
+        margin: 8px 5px 0px ;
+      }
+      &>.image{
+        display: inline-block;
+        margin-right: 5px;
+        img{
+          vertical-align: middle;
+          border-radius: 2px;
+          width: 30px;
+          height: 30px;
+        }
+        a{
+          margin-left: 10px;
+        }
+      }
+      &>input[type=text]{
+        flex-grow:3;
+        font-family: "Verdana","微软雅黑","宋体","Lucida Grande";
+        padding: 7px;
+        border: 1px solid #ddd;
+        outline: 0;
+        box-sizing: border-box;
+        width: 20px;
+        //   width: 70%;
+      }
+    }
+
+  }
+  li{
+    .iconMov{
+      cursor: move;
+    }
+  }
+  .fly{
+    position: absolute;
+  }
+  .blank{
+    border: 1px solid #ddd;
+  }
+}
+.iconfont{
+  margin: 5px 0 0 3px;
+  font-family: 'MyWebFont'!important;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .1px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconfont:hover{
+  cursor: pointer;
+}
+.icononly-add{
+  color: #31ba42;
+}
+.icononly-del{
+  color: #f0483f;
+}

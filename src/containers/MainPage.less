@@ -1,0 +1,151 @@
+.Main{
+  -webkit-user-select:none;
+  margin-top: 34px;
+  width: 580px;
+  overflow: hidden;
+  min-height: 500px;
+  float: left;
+  background-color: #fff;
+  margin-left: 305px;
+  border: 1px solid #ddd;
+  position: relative;
+  ul>.tempBlankLi{
+    height: 100px;
+   // border: 1px solid #e8dbad;
+   // background-color: #fffbef;
+  }
+  &>.bottom{
+    width: 100%;
+    height: 85px;
+  }
+  &>.buttonWrap{
+    background: none repeat scroll 0 0 #f1f1f1;
+    padding: 15px 0;
+    text-align: center;
+    width: 580px;
+    z-index: 1;
+    zoom: 1;
+    position: absolute;
+    bottom: 1px;
+
+
+    .btn{
+      position: relative;
+      display: inline-block;
+      color: #444;
+      border-radius: 2px;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      padding: 6px 20px;
+      margin: 0 5px 3px 3px;
+      line-height: 150%;
+      cursor: pointer;
+    }
+    .blue{
+      background-color: #2596e6;
+      color: #fff;
+      border: 1px solid #2596e6;
+    }
+  }
+}
+.MainTop{
+  width: 100%;
+  min-height: 50px;
+ // border-color: #f9f9f9 ;
+//  border-style: solid ;
+//  border-width: 1px;
+  background-color: white;
+  cursor: pointer;
+  img{
+    width: 100%;
+  }
+  &>.MainTopContent{
+    border-bottom: 1px solid #f9f9f9;
+    padding: 20px 6px 20px 15px;
+    margin: 0 0 6px 0;
+    position: relative;
+    zoom: 1;
+    h2{
+      word-wrap: break-word;
+      font-weight: normal;
+      margin: 0 0 5px;
+      display: block;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+    p{
+      word-wrap: break-word;
+    }
+  }
+  &>.MainTopContent:hover{
+    background-color: #f9f9f9;
+  }
+}
+.focused{
+  border: 1px solid #e8dbad;
+  background-color: #fffbef;
+}
+.preFocus{
+  border: 1px dashed #bbb;
+  background-color: #fff;
+}
+.defaultBorder{
+  border: 1px solid white;
+}
+
+.field {
+  margin: 0px 15px 6px 15px;
+  padding: 6px;
+  position: relative;
+  zoom: 1;
+  cursor: pointer;
+  .iconfont{
+    font-family: 'MyWebFont'!important;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .1px;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .faDup {
+    margin-right: 15px;
+    color: #31ba42;
+    background-color: #fff;
+  }
+  .faDel {
+    color: #f0483f;
+    background-color: #fff;
+  }
+  &>label{
+    padding: 3px 0 6px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+  }
+  &>.handle{
+    position: absolute;
+    &>move {
+      right: 2px;
+      top: 1px;
+      position: absolute;
+      cursor: move!important;
+      background-color: #fbfbfb;
+    }
+  }
+  &>.fieldActions {
+    position: absolute;
+    width: 100px !important;
+    right: 15px;
+    bottom: -10px;
+    padding: 0 2px;
+    z-index: 800;
+  }
+}
+.fly{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+#mainLiBlank{
+}

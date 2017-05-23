@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>表单填写</title>
+    <link rel="stylesheet" type="text/css" href="/public/base/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/public/base/css/wangEditor.css">
+    <link rel="stylesheet" type="text/css" href="/public/base/css/webUploader.css">
+</head>
+<body>
+<div id="root"></div>
+</body>
+
+<script src="//cdn.bootcss.com/react/15.3.0/react.js"></script>
+<script src="//cdn.bootcss.com/react/15.3.0/react-dom.js"></script>
+<script src="//cdn.bootcss.com/redux/3.5.2/redux.min.js"></script>
+<script src="//cdn.bootcss.com/react-redux/4.4.5/react-redux.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+<script type="text/javascript" src="/public/base/js/moment.min.js"></script>
+<script type="text/javascript" src="/public/base/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="/public/base/js/webuploader.min.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=vp9hLTQ420gauL1j3iW8E7yO" type="text/javascript"></script>
+<!--
+  上面的cdn可以自行替换
+-->
+<script src="/public/base/js/config.js"></script>
+<script src="/public/base/js/address-cn.js"></script>
+
+<!--
+ 此处需要后台动态生成一个当前模板id值，使得前台可以根据此id来获取对应的模板
+ <script>$PageProfile={id:0} </script>
+-->
+<script>
+    $PageProfile = {id: "acdf8b5a5f9f4f4db9fcf1adcdc01c6b", instanceId: "90c89b95f4904c7697f77e9910afb460"};
+</script>
+<script src="/dist/reFormView.js"></script>
+
+</html>

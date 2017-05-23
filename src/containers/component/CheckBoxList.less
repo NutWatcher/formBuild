@@ -1,0 +1,109 @@
+@import "./base";
+.ComCheckBoxList {
+  .baseCom();
+  .boldLabel();
+  .itemL{
+    width: 100%;
+    float: left;
+  }
+  .itemM{
+    width: 40%;
+    float: left;
+  }
+  .itemS{
+    width: 30%;
+    float: left;
+  }
+  .itemAuto{
+    margin-left: 5px;
+    width: auto;
+    float: left;
+  }
+}
+.ComCheckBox{
+  .baseCom();
+  .boldLabel();
+  padding: 0;
+  .ComCheckBoxTipWrap{
+    display: inline-block;
+    .ComTip{
+      margin: 0px;
+    }
+  }
+  input{
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    margin-right: 6px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    //padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px
+  }
+  .otherInput{
+    width:50%;
+  }
+}
+.ComCheckBoxWithImage{
+  .baseCom();
+  .boldLabel();
+  float: left;
+  padding: 0;
+  width: 150px;
+  &>div{
+    text-align: center;
+  }
+  img{
+    width: 130px;
+    height: 130px;
+  }
+  input{
+    background-color: #fff;
+    color: #333;
+    font-size: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 13.3333px;
+    margin-right: 6px;
+  }
+  .otherInput{
+    width:50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ComCheckBoxWithImage{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    border: 1px solid #ddd;
+    &>img{
+      width: auto;
+      height: auto;
+      display: inline-block;
+      padding: 5px;
+    }
+    &>div{
+      text-align: left;
+      vertical-align: middle;
+      display: inline-block;
+      flex-grow: 1;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+  .responseBox{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+}
